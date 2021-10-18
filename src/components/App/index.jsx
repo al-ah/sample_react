@@ -139,13 +139,6 @@ class App extends React.Component {
                            articles={this.state.articles}>
                        </SingleArticle>)}>
             </Route>
-
-            <button onClick={() => {
-                this.props.notyService.success('', 'show service toast');
-            }
-
-            }>show service toast
-            </button>
             {
                 !location.pathname.startsWith("/login") && !location.pathname.startsWith("/register") &&
                 <Footer></Footer>
